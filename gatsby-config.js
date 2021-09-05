@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Mellow Golem Games`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Peter Jewicz`,
+      summary: `Developer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Mellow Golem Games | Chicago Based Game Developers and RPG Lovers.`,
+    siteUrl: `https://www.mellowgolemgames.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `https://twitter.com/GolemMellow`,
     },
   },
   plugins: [
