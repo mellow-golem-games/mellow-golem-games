@@ -1,0 +1,21 @@
+.Button:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  transition-property: width !important;
+  transition-duration: .25s !important;
+  transition-timing-function: cubic-bezier(.25,1,.5,1) !important;
+}
+
+.Button:hover {
+  color: white;
+}
+
+.Button:hover:after {
+  width: 100%;
+}
