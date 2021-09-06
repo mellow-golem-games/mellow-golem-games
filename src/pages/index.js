@@ -28,38 +28,14 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Hero />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+      <div class="bg-dark text-white text-center px-3 text-3xl py-16">
+        <h2>Indie Game Devs and RPG Lovers</h2>
+      </div>
+      <div className="py-16 text-center  px-3 max-w-3xl m-auto">
+        <h2 className="text-3xl">Who are We?</h2>
+        <p className="pt-8">Mellow Golem Games is an indie game studio located in the suburbs of Chicago with a focus on creating RPGs. We follow the simple rule that we build games that we'd want to play.</p>
+        <p className="pt-4">While our main focus is game development, we also hope to produce valuable content for tabletop and other RPG media. We love what we do, and that passion shines through on everything we do.</p>
+      </div>
     </Layout>
   )
 }
