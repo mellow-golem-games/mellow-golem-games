@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Hero />
-      <div class="bg-dark text-white text-center px-3 text-3xl py-16">
+      <div className="bg-dark text-white text-center px-3 text-3xl py-16">
         <h2>Indie Game Devs and RPG Lovers</h2>
       </div>
       <div className="py-16 text-center  px-3 max-w-3xl m-auto">

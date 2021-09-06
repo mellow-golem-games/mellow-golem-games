@@ -8,6 +8,10 @@ module.exports = {
       white: "white",
       dark: "#2d2d2d",
     },
+    fontFamily: {
+       'display': ['Barlow'],
+       'body': ['Barlow']
+     },
   },
   variants: {
     extend: {},

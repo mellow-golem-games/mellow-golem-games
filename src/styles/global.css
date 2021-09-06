@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Barlow";
+  font-weight: 400;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
 .logo {
   position: relative;
 }
