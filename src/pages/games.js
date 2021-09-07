@@ -16,27 +16,15 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Hero />
-      <div className="bg-dark text-white text-center px-3 text-3xl py-16">
-        <h2>Indie Game Devs and RPG Lovers</h2>
-      </div>
-      <div className="py-16 text-center px-3 max-w-3xl m-auto">
-        <h2 className="text-4xl">Who are We?</h2>
-        <p className="pt-8">Mellow Golem Games is an indie game studio located in the suburbs of Chicago with a focus on creating RPGs. We follow the simple rule that we build games that we'd want to play.</p>
-        <p className="pt-4">While our main focus is game development, we also hope to produce valuable content for tabletop and other RPG media. We love what we do, and that passion shines through on everything we do.</p>
-      </div>
-      <div className="py-16 max-w-6xl m-auto px-4">
-        <h2 className="text-4xl text-primary mb-12 styled-header">Our Games</h2>
+      <Seo title="Mellow Golem Games | Games" />
+      <div className="py-16 pt-32 max-w-6xl m-auto px-4">
+        <h2 className="text-4xl text-primary mb-12 text-center">Our Games</h2>
         <div className="grid grid-cols-3 gap-4">
           {games.map(game => {
             return (
               <Card details={game} />
             )
           })}
-        </div>
-        <div className="mt-6 text-center">
-          <Button text="All Games" link="/games" />
         </div>
       </div>
     </Layout>
