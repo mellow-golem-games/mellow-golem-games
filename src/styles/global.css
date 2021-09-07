@@ -15,6 +15,21 @@ p {
   font-size: 1.125rem;
 }
 
+.styled-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.styled-header:after {
+  content: '';
+  border-top: 2px solid;
+  margin: 8px 20px 0 40px;
+  flex: 1 0 20px;
+}
+
 .logo {
   position: relative;
 }
