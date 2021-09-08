@@ -13,8 +13,8 @@ const Nav = () => {
         <div className="flex items-center header-bold">
           <ul>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Home</a></li>
-            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/services">Services</a></li>
-            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/work">Work</a></li>
+            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/games">Games</a></li>
+            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/apps">apps</a></li>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Blog</a></li>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Contact</a></li>
           </ul>

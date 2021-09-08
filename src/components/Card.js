@@ -18,7 +18,7 @@ const Card = ({ details }) => {
       >
         <h3>{details.name}</h3>
         <div className="ml-2">
-          <Button text="Explore" link={details.link} style="small"/>
+          <Button text="Explore" link={details.link} style="small" color="white"/>
         </div>
       </div>
     </div>
