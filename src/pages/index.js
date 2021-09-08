@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import { games } from '../games/games';
+import { apps } from '../apps/apps';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -37,6 +38,19 @@ const BlogIndex = ({ data, location }) => {
         </div>
         <div className="mt-6 text-center">
           <Button text="All Games" link="/games" />
+        </div>
+      </div>
+      <div className="py-16 max-w-6xl m-auto px-4">
+        <h2 className="text-4xl text-primary mb-12 styled-header">Our Games</h2>
+        <div className="grid grid-cols-3 gap-4">
+          {apps.map(app => {
+            return (
+              <Card details={app} />
+            )
+          })}
+        </div>
+        <div className="mt-6 text-center">
+          <Button text="All Apps" link="/apps" />
         </div>
       </div>
     </Layout>
