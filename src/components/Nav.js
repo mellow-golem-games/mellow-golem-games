@@ -14,8 +14,8 @@ const Nav = () => {
           <ul>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Home</a></li>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/games">Games</a></li>
-            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/apps">apps</a></li>
-            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Blog</a></li>
+            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/apps">Apps</a></li>
+            <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/blog">Blog</a></li>
             <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/contact">Contact</a></li>
           </ul>
         </div>
