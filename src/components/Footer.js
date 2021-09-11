@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="bg-dark py-8">
       <div className="flex justify-between max-w-6xl m-auto">
         <div className="text-white">
-          <li className="inline-block px-3 transition-all hover:text-secondary border-r border-white"><a href="#">Privacy Policy</a></li>
-          <li className="inline-block px-3 transition-all hover:text-secondary"><a href="#">Contact</a></li>
+          <li className="inline-block px-3 transition-all hover:text-secondary border-r border-white"><a href="/privacy">Privacy Policy</a></li>
+          <li className="inline-block px-3 transition-all hover:text-secondary"><a href="/contact">Contact</a></li>
         </div>
         <div>
           <p>Social</p>
