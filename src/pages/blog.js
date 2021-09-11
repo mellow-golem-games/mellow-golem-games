@@ -18,11 +18,10 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="All posts" />
       <div className="py-16 pt-32 max-w-6xl m-auto px-4">
         <h2 className="text-4xl text-primary mb-12 text-center">Recent Posts</h2>
-        <div className="grid grid-cols-2 gap-8 px-4">
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
+        <div className="grid md:grid-cols-2 gap-8 px-4">
+          {posts.map(post => {
+            return <PostCard post={post} key={post.fields.slug}/>
+          })}
         </div>
       </div>
     </Layout>

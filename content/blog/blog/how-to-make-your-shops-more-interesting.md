@@ -1,7 +1,7 @@
 ---
 title: How To Make Your Shops More Interesting (+10 Shop Ideas)
 date: "2021-06-29T12:12:03.284Z"
-description: "Hello World"
+description: "Learn quick tips to make your shops more interesting."
 thumbnail: "posts/how_to_make_shops_more_interesting.jpeg"
 lastModifed: "June 29, 2021"
 ---

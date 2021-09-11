@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="Mellow Golem Games | Games" />
       <div className="py-16 pt-32 max-w-6xl m-auto px-4">
         <h2 className="text-4xl text-primary mb-12 text-center">Our Games</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {games.map(game => {
             return (
               <Card details={game} />

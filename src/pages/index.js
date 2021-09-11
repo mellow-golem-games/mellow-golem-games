@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
       </div>
       <div className="py-16 max-w-6xl m-auto px-4">
         <h2 className="text-4xl text-primary mb-12 styled-header">Our Games</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {games.map(game => {
             return (
               <Card details={game} />
@@ -42,7 +42,7 @@ const BlogIndex = ({ data, location }) => {
       </div>
       <div className="py-16 max-w-6xl m-auto px-4">
         <h2 className="text-4xl text-primary mb-12 styled-header">Our Apps</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {apps.map(app => {
             return (
               <Card details={app} />
