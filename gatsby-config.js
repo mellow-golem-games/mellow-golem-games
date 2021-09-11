@@ -100,6 +100,9 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      description
+                      thumbnail
+                      lastModifed
                     }
                   }
                 }
