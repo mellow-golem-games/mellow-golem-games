@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import ProjectPage from "../../components/ProjectPage"
 import Seo from "../../components/seo"
 
-import { dungeonMaker } from '../../apps/DungeonMaker'
+import { dungeonMaker } from '../../apps/dungeonMaker'
 
 const BlogIndex = ({ location }) => {
 
