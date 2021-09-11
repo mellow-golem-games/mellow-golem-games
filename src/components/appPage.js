@@ -11,6 +11,7 @@ const AppPage = ({project}) => {
       >
       </div>
 
+
       <div className="text-center py-28 max-w-5xl m-auto px-4 md:px-0">
         <h2 className="text-5xl pb-8">{project.title}</h2>
         <p className="text-xl pb-8 border-b-2 border-secondary">{ project.description }</p>
@@ -29,7 +30,7 @@ const AppPage = ({project}) => {
                 }
               </div>
             </div>
-         : null 
+         : null
         }
 
         <div className="pt-28">
