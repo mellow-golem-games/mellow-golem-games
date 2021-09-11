@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 
-const AppPage = ({project}) => {
+const ProjectPage = ({project}) => {
   return (
     <div>
       <div
@@ -46,4 +46,4 @@ const AppPage = ({project}) => {
   )
 }
 
-export default AppPage
+export default ProjectPage
