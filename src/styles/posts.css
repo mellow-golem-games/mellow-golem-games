@@ -8,6 +8,12 @@
   font-weight: 600;
 }
 
+.blog-post h4{
+  margin-top: 32px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .blog-post p {
   margin-top: 20px;
 }

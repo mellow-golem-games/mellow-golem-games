@@ -7,7 +7,7 @@ const PostCard = ({ post }) => {
   return (
     <div className="Post-Card transition-all duration-500 mb-12" style={{boxShadow: "0 0 19px 2px rgba(0,0,0,.11)"}}>
       <a href={post.fields.slug}>
-        <div className="bg-cover bg-center" style={{height: "200px", backgroundImage: "url('/images/mountain.jpg')"}}>
+        <div className="bg-cover bg-center" style={{height: "200px", backgroundImage: `url('/images/${post.frontmatter.thumbnail}')`}}>
         </div>
         <div className="p-4">
           <p className="text-sm text-primary">{ post.frontmatter.date }</p>
