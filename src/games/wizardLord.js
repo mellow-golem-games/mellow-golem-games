@@ -3,6 +3,6 @@ export const wizardLord = {
   localUrl: "/games/tomb-of-the-wizard-lord",
   description: "In Progress - Check Back For Updates",
   imageUrl: "/images/games/town.jpg",
-  link: "/tomb-of-the-wizard-lord",
+  link: "/games/tomb-of-the-wizard-lord",
   images: []
 }

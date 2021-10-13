@@ -18,22 +18,29 @@ const Nav = () => {
             style={{top: 0, right: open ? 0 : "-400px"}}
           >
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/">Home</a>
+              <Link to={"/"} itemProp="url" className="">
+                Home
+              </Link>
             </li>
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/games">Games</a>
+              <Link to={"/games"} itemProp="url" className="">
+                Games
+              </Link>
             </li>
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/apps">Apps</a>
+              <Link to={"/apps"} itemProp="url" className="">
+                Apps
+              </Link>
             </li>
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/blog">Blog</a>
+              <Link to={"/blog"} itemProp="url" className="">
+                Blog
+              </Link>
             </li>
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/contact">Contact</a>
-            </li>
-            <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
-              <a href="/contact">Contact</a>
+              <Link to={"/contact"} itemProp="url" className="">
+                Contact
+              </Link>
             </li>
             <li className="md:inline-block px-8 md:px-3 transition-all bg-primary py-3 md:py-0">
               <p className="md:hidden" onClick={() => setOpen(false)}>Close</p>
