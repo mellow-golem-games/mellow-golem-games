@@ -45,3 +45,11 @@ p {
   background-size: 100%;
   border-radius: 50%;
 }
+
+
+
+ol {
+  list-style: decimal;
+  margin-top: 15px;
+  padding-left: 20px;
+}
