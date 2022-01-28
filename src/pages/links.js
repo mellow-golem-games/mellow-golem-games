@@ -16,6 +16,11 @@ const LinksPage = ({ data, location }) => {
             <img src="/images/title.png" width="320px" />
           </div>
           <div className="text-center">
+          <div className="bg-white px-4 py-2 rounded-md max-w-md m-auto my-4">
+            <a href="https://www.worldscrafter.com">
+              <h2 className="text-xl">Worlds Crafter</h2>
+            </a>
+          </div>
             <div className="bg-white px-4 py-2 rounded-md max-w-md m-auto my-4">
               <a href="https://apps.apple.com/us/app/city-encounters/id1583857845">
                 <h2 className="text-xl">City Encounters IOS APP</h2>
