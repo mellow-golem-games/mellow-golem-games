@@ -17,3 +17,11 @@
 .blog-post p {
   margin-top: 20px;
 }
+
+.blog-post a {
+  color: #e05151;
+}
+
+.blog-post a:hover {
+  color: black;
+}
