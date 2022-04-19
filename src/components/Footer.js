@@ -24,7 +24,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4304639527456549"
+     crossorigin="anonymous"></script>
     </footer>
   )
 }
