@@ -19,9 +19,6 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Hero />
-      <div className="bg-dark text-white text-center px-3 text-3xl py-16">
-        <h2>Indie Game Devs and RPG Lovers</h2>
-      </div>
       <div className="py-16 text-center px-3 max-w-3xl m-auto">
         <h2 className="text-4xl">Who are We?</h2>
         <p className="pt-8">Mellow Golem Games is an indie game studio located in the suburbs of Chicago with a focus on creating RPGs. We follow the simple rule that we build games that we'd want to play.</p>
