@@ -1,12 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+const isBrowser = () => typeof window !== "undefined"
 
 const Nav = () => {
   const TRIGGER_NAV_BG = 600;
   const [open, setOpen] = React.useState(false);
   const [scrollPos, setScrollPos] = React.useState(0)
-  const isRoot = window.location.pathname == "/";
+  const isRoot =   isBrowser() && window.location.pathname == "/";
 
   const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false
 
