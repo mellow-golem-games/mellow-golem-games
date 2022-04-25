@@ -25,7 +25,7 @@ const Nav = () => {
 
 
   return (
-    <div className={`text-white fixed px-4 py-4 z-10 w-full ${navBg ? "bg-dark" : "" }`}>
+    <div className={`text-white fixed px-4 py-4 z-10 w-full ${!navBg ? "" : "bg-dark" }`}>
       <div className="max-w-6xl m-auto flex justify-between">
         <div className="logo pl-12">
           <a href="/"><img src="/images/title.png" width="220px" /></a>
