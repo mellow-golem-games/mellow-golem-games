@@ -8,6 +8,7 @@ const Nav = () => {
   const [open, setOpen] = React.useState(false);
   const [scrollPos, setScrollPos] = React.useState(0)
   const isRoot =   isBrowser() && window.location.pathname == "/";
+  console.log(isRoot)
 
   const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false
 
