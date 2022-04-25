@@ -53,3 +53,9 @@ ol {
   margin-top: 15px;
   padding-left: 20px;
 }
+
+@media (min-width: 768px) {
+  .navWrapper {
+    background: transparent !important;
+  }
+}

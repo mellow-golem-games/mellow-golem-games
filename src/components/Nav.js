@@ -3,10 +3,24 @@ import { Link } from "gatsby"
 
 
 const Nav = () => {
+  const TRIGGER_NAV_BG = 600;
   const [open, setOpen] = React.useState(false);
+  const [scrollPos, setScrollPos] = React.useState(0)
+  const isRoot = window.location.pathname == "/";
+
+  const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+  }, [scrollPos]);
+
 
   return (
-    <div className="text-white fixed px-4 py-4 z-10 w-full bg-dark">
+    <div className={`text-white fixed px-4 py-4 z-10 w-full ${navBg ? "bg-dark" : "" }`}>
       <div className="max-w-6xl m-auto flex justify-between">
         <div className="logo pl-12">
           <a href="/"><img src="/images/title.png" width="220px" /></a>
@@ -14,7 +28,7 @@ const Nav = () => {
         <div className="flex items-center header-bold">
           <svg className="md:hidden" onClick={() => setOpen(true)} width="28px" height="28px" aria-hidden="true" role="img"viewBox="0 0 448 512" ><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg>
           <ul
-            className="md:px-0 text-xl md:text-lg text-center md:text-left bg-dark md:bg-transparent absolute md:static transition-all"
+            className="navWrapper md:px-0 text-xl md:text-lg text-center md:text-left bg-dark absolute md:static transition-all"
             style={{top: 0, right: open ? 0 : "-400px"}}
           >
             <li className="md:inline-block px-8 md:px-3 transition-all hover:text-secondary py-3 md:py-0">
