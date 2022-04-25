@@ -9,8 +9,11 @@ const Nav = () => {
   const [scrollPos, setScrollPos] = React.useState(0)
   const isRoot =   isBrowser() && window.location.pathname == "/";
   console.log(isRoot)
+  console.log(scrollPos)
 
-  const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false
+  const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false;
+
+  console.log(navBg);
 
   React.useEffect(() => {
     const handleScroll = () => {
