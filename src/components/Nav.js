@@ -6,26 +6,26 @@ const isBrowser = () => typeof window !== "undefined"
 const Nav = () => {
   const TRIGGER_NAV_BG = 600;
   const [open, setOpen] = React.useState(false);
-  const [scrollPos, setScrollPos] = React.useState(0)
-  const isRoot =   isBrowser() && window.location.pathname == "/";
+  const [navBg, setNavBg] = React.useState(false)
 
-  const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false;
+
+  // const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false;
   const navClass = navBg ? "bg-dark" : "";
-
-  console.log(navBg);
-  console.log(navClass);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setScrollPos(window.scrollY);
+        console.log('test')
+      const isRoot =   isBrowser() && window.location.pathname == "/";
+      const val = !isRoot ? true : window.scrollY > TRIGGER_NAV_BG ? true : false;
+      setNavBg(val);
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-  }, [scrollPos]);
+  }, []);
 
 
   return (
-    <div className={`${navClass} text-white fixed px-4 py-4 z-10 w-full`}>
+    <div className={`${navBg ? "bg-dark" : "" } text-white fixed px-4 py-4 z-10 w-full`}>
       <div className="max-w-6xl m-auto flex justify-between">
         <div className="logo pl-12">
           <a href="/"><img src="/images/title.png" width="220px" /></a>
