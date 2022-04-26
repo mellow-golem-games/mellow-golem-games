@@ -8,12 +8,12 @@ const Nav = () => {
   const [open, setOpen] = React.useState(false);
   const [scrollPos, setScrollPos] = React.useState(0)
   const isRoot =   isBrowser() && window.location.pathname == "/";
-  console.log(isRoot)
-  console.log(scrollPos)
 
   const navBg = !isRoot ? true : scrollPos > TRIGGER_NAV_BG ? true : false;
+  const navClass = navBg ? "bg-dark" : "";
 
   console.log(navBg);
+  console.log(navClass);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +25,7 @@ const Nav = () => {
 
 
   return (
-    <div className={`${navBg ? "" : "bg-dark" } text-white fixed px-4 py-4 z-10 w-full`}>
+    <div className={`${navClass} text-white fixed px-4 py-4 z-10 w-full`}>
       <div className="max-w-6xl m-auto flex justify-between">
         <div className="logo pl-12">
           <a href="/"><img src="/images/title.png" width="220px" /></a>
