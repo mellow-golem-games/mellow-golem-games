@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Social from './social';
+import Social from './Social';
 
 
 const Footer = () => {
