@@ -2,7 +2,7 @@
 title: Text Game Devlog 2
 date: "2022-07-14T22:12:03.284Z"
 description: "Devlog #2 for our upcoming text adventure game"
-thumbnail: "devlog/textgame/1-cover.jpg"
+thumbnail: "devlog/textgame/2-cover.jpg"
 lastModifed: "July 14, 2022"
 ---
 
